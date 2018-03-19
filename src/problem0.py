@@ -169,7 +169,7 @@ def problem0a(n):
     else:
         return False
 
-    return sum_of_digits(n) % 2 == 1
+    return sum_of_digits(n)%2 == 1
 
 
 def run_test_problem0b():
