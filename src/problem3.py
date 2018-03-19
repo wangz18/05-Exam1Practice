@@ -239,14 +239,13 @@ def problem3b(m, point1):
     #    DIFFICULTY:      8 or 9
     #    TIME ESTIMATE:   20 to 30 minutes.
     # ------------------------------------------------------------------
+
     window = rg.RoseWindow(400,650)
-    number = 3
     result = 0
     for k in range(m):
         startpoint = rg.Point(point1.x,point1.y+60*k)
-        if k > 0:
-            number = number + 2
-        problem3a(window,startpoint, number)
+        number = 3+2*k
+        problem3a(window,startpoint,number)
         result = result + problem3a(window,startpoint, number)
     return result
 
